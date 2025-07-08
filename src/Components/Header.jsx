@@ -85,7 +85,7 @@ const Header = ()=>{
                 }
             </div>
         <div className="flex justify-center text-2xl">
-            <h1>Made with ❤️ by Rajat Pratap singh</h1>
+            <h1>Made with ❤️ by Rajat </h1>
         </div>
         </>
     )
