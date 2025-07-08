@@ -5,7 +5,7 @@ import { GiStopwatch } from "react-icons/gi";
 const Header = ()=>{
     const[timeInSec,setTimeInSec] =useState(0);
     const[lap,setLap] = useState([]);
-    const[toggle,setToggle] =useState(false);
+    const[toggle,setToggle] =useState(true);
 
     useEffect(()=>{
         let id;
@@ -72,18 +72,17 @@ const Header = ()=>{
         <button onClick={HandleReset} className="bg-cyan-500 text-white rounded-2xl  w-40">Reset</button>
         <button onClick={HandleLap}className="bg-teal-700 text-white rounded-2xl w-40">Lap</button>
         </div>
-            <div className="flex flex-col justify-center items-center pt-10 text-2xl text-blue-700 mb-10">
-                <div className="h-64 overflow-y-auto w-40 scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-blue-100">
-                    {
-                        lap.map((ele, idx) => (
+            <div className="flex flex-col justify-center items-center pt-8 text-2xl text-blue-700 ">
+                {
+                    lap.map((ele,idx)=>{
+                        return(
                         <ul key={idx}>
-                        <li>Lap : {ele}</li>
+                            <li>Lap : {ele}</li>
                         </ul>
-                    ))
-                    }
-                </div>
-        </div>
-
+                        )
+                    })
+                }
+            </div>
         <div className="flex justify-center text-2xl">
             <h1>Made with ❤️ by Rajat</h1>
         </div>
