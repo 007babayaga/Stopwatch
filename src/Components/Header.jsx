@@ -5,7 +5,7 @@ import { GiStopwatch } from "react-icons/gi";
 const Header = ()=>{
     const[timeInSec,setTimeInSec] =useState(0);
     const[lap,setLap] = useState([]);
-    const[toggle,setToggle] =useState(true);
+    const[toggle,setToggle] =useState(false);
 
     useEffect(()=>{
         let id;
