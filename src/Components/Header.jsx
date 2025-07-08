@@ -32,6 +32,7 @@ const Header = ()=>{
         //mein yha pe seconds ko phirse reset kr dunga
     const HandleReset =()=>{
         setTimeInSec(0);
+        setLap([]);
     }
 
     const HandleStop = ()=>{
