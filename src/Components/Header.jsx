@@ -59,7 +59,7 @@ const Header = ()=>{
             <h1 className="text-black text-4xl ">Stopwatch</h1>
         </div>
         <div className="flex justify-center pt-4">
-        <GiStopwatch className="text-9xl text-teal-900 "/>
+        <GiStopwatch className="text-9xl text-teal-900"/>
         </div>
         <div className="flex flex-row justify-center pt-9">
             {
