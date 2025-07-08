@@ -65,15 +65,14 @@ const Header = ()=>{
                 <h1 className="text-6xl">{uniformHours}:{uniformMin}:{uniformSeconds}</h1>
             }
         </div>
-        <div className="flex flex-row justify-center gap-3 pt-7">
+        <div className="flex flex-row justify-center gap-3 pt-6">
             {
                 toggle ? ( <button onClick={HandleStop}  className="bg-red-700 text-white rounded-2xl h-10  w-40 ">Stop</button>) :(<button onClick={HandleStart}  className="bg-green-700 text-white rounded-2xl h-10  w-40 ">Start</button>)
             }
         <button onClick={HandleReset} className="bg-cyan-500 text-white rounded-2xl  w-40">Reset</button>
         <button onClick={HandleLap}className="bg-teal-700 text-white rounded-2xl w-40">Lap</button>
         </div>
-        <div>
-            <div className="flex flex-col justify-center items-center pt-8 text-2xl text-blue-700 m-7">
+            <div className="flex flex-col justify-center items-center pt-10 text-2xl text-blue-700 mb-10 ">
                 {
                     lap.map((ele,idx)=>{
                         return(
@@ -84,6 +83,8 @@ const Header = ()=>{
                     })
                 }
             </div>
+        <div className="flex justify-center text-2xl">
+            <h1>Made with ❤️ by Rajat</h1>
         </div>
         </>
     )
