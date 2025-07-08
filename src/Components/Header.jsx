@@ -11,7 +11,7 @@ const Header = ()=>{
         let id;
         if(toggle){
         id = setInterval(() => {
-        console.log(timeInSec);
+        // console.log(timeInSec);
         setTimeInSec((prev)=>prev+1);
     }, 1000);
 }
