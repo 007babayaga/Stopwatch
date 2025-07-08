@@ -72,7 +72,7 @@ const Header = ()=>{
         <button onClick={HandleReset} className="bg-cyan-500 text-white rounded-2xl  w-40">Reset</button>
         <button onClick={HandleLap}className="bg-teal-700 text-white rounded-2xl w-40">Lap</button>
         </div>
-            <div className="flex flex-col justify-center items-center pt-10 text-2xl text-blue-700 mb-10 ">
+            <div className="flex flex-col justify-center items-center pt-10 text-2xl text-blue-700 mb-10 overflow-y-hidden">
                 {
                     lap.map((ele,idx)=>{
                         return(
