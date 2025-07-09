@@ -57,7 +57,7 @@ const Header = ()=>{
         <>
         <div className="bg-blue-500 p-7  flex justify-center">
             <h1 className="text-black text-4xl ">Stopwatch</h1>
-        </div>
+        </div> 
         <div className="flex justify-center pt-4">
         <GiStopwatch className="text-9xl text-teal-900"/>
         </div>
